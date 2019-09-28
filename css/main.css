@@ -1,0 +1,87 @@
+body {
+   margin: 0;
+   padding: 0;
+   background: url("../background.jpg") no-repeat center center fixed; 
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+   background-size: cover;
+   font-family: Tahoma, Geneva, sans-serif;
+   letter-spacing: 2px;
+   font-size: 20px;
+}
+#main-container {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 100vw;
+   height: 100vh;
+}
+#controle {
+   height: 600px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: space-between;
+}
+.button {
+   display: block;
+   cursor: pointer;
+   color: #fff;
+   width: 130px;
+   text-align: center;
+   padding: 10px;
+   margin: 0 0 10px 10px;
+   text-transform: uppercase;
+   transition: all 1s ease;
+}
+#restart-btn {
+   background-color: #02ad66;
+   padding: 10px;
+}
+#restart-btn:hover {
+   background-color: #0dd200;
+}
+#score {
+   padding: 10px;
+   color: #dedede;
+}
+#controle-arrows {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   margin-left: 10px;
+}
+.controle-btn {
+   width: 60px;
+   display: block;
+   cursor: pointer;
+   color: #fff;
+   background-color: #15bd9e;
+   border: 1px dotted #fff;
+   text-align: center;
+   padding: 5px 5px;
+   margin: 3px;
+   font-size: 16px;
+   transition: all 0.5s ease;
+}
+.flex-row {
+   display: flex;
+}
+.controle-btn:hover {
+   background-color: #f78900;
+}
+#game-over {
+   width: 100vw;
+   height: 100vh;
+   position: absolute;
+   background: rgba(0, 0, 0, 0.7411764705882353);
+   text-align: center;
+   color: white;
+   font-size: 3em;
+   display: none;
+}
+#game-over #restart-btn {
+   min-width: 40%;
+   margin: auto;
+}

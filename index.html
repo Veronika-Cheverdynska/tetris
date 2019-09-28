@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>Tetris</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+      <div id="game-over">
+            <p>Game Over!</p>
+            <p>Your score is <span id="score-game-over">0</span>.</p>
+            <div id="restart-btn" class="button" onclick="restartFunction()">Restart</div>
+         </div>
+   <div id="main-container">
+      <canvas id="tetris" width="300" height="600"></canvas>
+      <div id="controle">
+         <div>
+            <div id="restart-btn" class="button" onclick="restartFunction()">Restart</div>
+         </div>
+         <div id="controle-arrows">
+               <div id="rotate-btn" class="controle-btn" onclick="rotateFunction()">Rotate</div>
+               <div class="flex-row">
+                  <div id="left-btn" class="controle-btn" onclick="leftFunction()">Left</div>
+                  <div id="right-btn" class="controle-btn" onclick="rightFunction()">Right</div>
+               </div>
+               <div id="down-btn" class="controle-btn" onclick="downFunction()">Down</div>
+            </div>
+         <div id="score">Score: <span id="score-value">0</span></div>
+      </div>
+   </div>
+
+   <script src="js/tetrominoes.js"></script>
+   <script src="js/main.js"></script>
+</body>
+</html>
